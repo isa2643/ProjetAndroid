@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/idListItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="4dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/idIVimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:padding="3dp" />
+
+        <TextView
+            android:id="@+id/etatOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/green"
+            android:visibility="invisible"
+            android:gravity="right"
+            android:layout_toEndOf="@id/question_text"
+            android:text="OK" />
+
+
+        <TextView
+            android:id="@+id/etatKO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:visibility="invisible"
+            android:layout_toEndOf="@id/question_text"
+            android:textAlignment="gravity"
+            android:text="KO" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/question_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Question"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/reponse_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Reponse"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

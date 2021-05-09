@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".AjouterQuestion"
+    android:id="@+id/activity_ajouter">
+
+    <TextView
+        android:id="@+id/titre_ajouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nouvelle question"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Question"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/reponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Réponse"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/lien_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Lien image"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_valider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Ajouter"
+        android:textAllCaps="false" />
+
+</LinearLayout>
